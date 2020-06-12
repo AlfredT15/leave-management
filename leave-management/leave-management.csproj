@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-leave_management-07105A9B-8648-4F4F-A2F3-67DE82CDE495</UserSecretsId>
+    <RootNamespace>leave_management</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200610221338_AddedLeaveDetailsTables.cs" />
+    <Compile Remove="Data\Migrations\20200610221338_AddedLeaveDetailsTables.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200610221547_AddedLeaveDetailsTables2.cs" />
+    <Compile Remove="Data\Migrations\20200610221547_AddedLeaveDetailsTables2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200610222155_AddedLeaveDetailsTables3.cs" />
+    <Compile Remove="Data\Migrations\20200610222155_AddedLeaveDetailsTables3.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>
